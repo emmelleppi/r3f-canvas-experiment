@@ -19,6 +19,11 @@ body {
 }
 
 #root {
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(182, 182, 182, 0.2) 22%,
+    rgba(209, 209, 209, 1) 99%
+  );
   overflow: auto;
 }
 
@@ -26,8 +31,6 @@ body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: black;
   -webkit-font-smoothing: antialiased;
 }

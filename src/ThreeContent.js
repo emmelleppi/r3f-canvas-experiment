@@ -36,9 +36,11 @@ const Content = forwardRef(function Content(props, { objectRef, groupRef }) {
           scale-z={scale}
         >
           <torusBufferGeometry args={[6, 0.5, 64, 64]} />
-          <meshStandardMaterial
-            metalness={0.5}
-            roughness={0.6}
+          <meshPhysicalMaterial
+            clearcoat={1}
+            metalness={0.7}
+            roughness={0.9}
+            transmission={0.5}
             aoMap={textures[0]}
             displacementMap={textures[1]}
             normalMap={textures[2]}
@@ -64,7 +66,7 @@ export function Slave(props) {
   });
   return (
     <>
-      <fog attach="fog" args={["black", 0, 100]} />
+      <fog attach="fog" args={["black", 0, 150]} />
       <Content ref={{ objectRef, groupRef }} {...props} />
     </>
   );
@@ -170,7 +172,7 @@ export function Master(props) {
 
   return (
     <>
-      <fog attach="fog" args={["black", 0, 100]} />
+      <fog attach="fog" args={["black", 0, 150]} />
       <Content
         ref={{ objectRef, groupRef }}
         {...props}

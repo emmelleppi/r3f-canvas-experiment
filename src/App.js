@@ -15,7 +15,7 @@ export default function App() {
       <Canvas
         concurrent
         className="canvas"
-        camera={{ position: [0, 0, 20], far: 1000, near: 19.8, fov: 70 }}
+        camera={{ position: [0, 0, 20], far: 1000, near: 19.99, fov: 70 }}
       >
         <Suspense fallback={null}>
           <Master />

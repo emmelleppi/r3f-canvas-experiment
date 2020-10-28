@@ -1,5 +1,3 @@
-@import url("https://rsms.me/inter/inter.css");
-
 * {
   box-sizing: border-box;
 }
@@ -15,7 +13,7 @@ body,
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Alata", sans-serif;
 }
 
 #root {
